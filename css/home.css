@@ -1,4 +1,5 @@
 @import "nav.css";
+@import "footer.css";
 
 /* Hero Section */
 .hero-section {
@@ -158,4 +159,35 @@
 .pre-btn:hover img,
 .nxt-btn:hover img {
   opacity: 1;
+}
+
+/* collections */
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.collection {
+  position: relative;
+}
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Mochiy Pop P One";
+  opacity: 0.6;
+}
+.collection:nth-child(3) {
+  grid-column: span 2;
 }
